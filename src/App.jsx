@@ -1,6 +1,6 @@
 import './App.css';
 import axios from "axios";
-import { useState } from "react";
+import {useState} from "react";
 import worldmap from "./assets/world_map.png";
 
 //api key  1069|fxruKNZL75NCNywx27zhItek4yJiwH9lpaKXjLTi
@@ -37,7 +37,7 @@ function App() {
     return (
         <>
             <header>
-                <img src={worldmap} alt="worldmap" />
+                <img src={worldmap} alt="worldmap"/>
                 <h1>World Regions</h1>
             </header>
             <main>
@@ -45,7 +45,11 @@ function App() {
 
                 <ul>
                     {countries.map((country) => (
-                        <li key={country.name}>{country.name}</li>
+                        <li key={country.name}>
+                            {country.name}
+                            <img src={country.href.flag} alt={country.name}/>
+                            <p>Has a population of {country.population} people</p>
+                        </li>
                     ))}
                 </ul>
 
