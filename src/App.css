@@ -1,0 +1,30 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
