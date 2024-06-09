@@ -8,7 +8,7 @@ import ContinentColor from "./componenten/regionColor/ContinentColor.jsx";
 
 function App() {
     const apiKeyRestfulCountries = '1069|fxruKNZL75NCNywx27zhItek4yJiwH9lpaKXjLTi';
-    const apiUrl = "https://restfulcountries.com/api/v1/countries";
+    const apiUrl = "https://restfulcountries.com/api/v1/countries?population_from=2&population_to=5000000000000";
     const [countries, setCountries] = useState([]);
     const [error, toggleError] = useState(false);
     // const sortedCountries = countries.sort((a, b) => a.population - b.population);
