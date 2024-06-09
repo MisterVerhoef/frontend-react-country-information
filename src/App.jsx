@@ -2,6 +2,7 @@ import './App.css';
 import axios from "axios";
 import {useState} from "react";
 import worldmap from "./assets/world_map.png";
+import ContinentColor from "./componenten/regionColor/ContinentColor.jsx";
 
 //api key  1069|fxruKNZL75NCNywx27zhItek4yJiwH9lpaKXjLTi
 
@@ -10,7 +11,8 @@ function App() {
     const apiUrl = "https://restfulcountries.com/api/v1/countries";
     const [countries, setCountries] = useState([]);
     const [error, toggleError] = useState(false);
-
+    // const sortedCountries = countries.sort((a, b) => a.population - b.population);
+    // setCountries(sortedCountries);
     async function fetchData() {
         toggleError(false);
 
@@ -46,8 +48,8 @@ function App() {
                 <ul>
                     {countries.map((country) => (
                         <li key={country.name}>
-                            {country.name}
                             <img src={country.href.flag} alt={country.name}/>
+                            <span className={ContinentColor(country.continent)}>{country.name}</span>
                             <p>Has a population of {country.population} people</p>
                         </li>
                     ))}
