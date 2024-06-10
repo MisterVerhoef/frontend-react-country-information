@@ -5,15 +5,15 @@
     flex-direction: row;
     align-items:center;
     justify-content: center;
-    border: 4px red dotted;
+    margin: 20px;
 }
 
  li {
      display: flex;
      flex-basis: 300px;
-     flex-wrap: wrap;
+     /*flex-wrap: wrap;*/
      flex-direction: column;
      align-items:center;
      justify-content: center;
-     border: 4px blue dotted;
+     border: 4px black solid;
  }

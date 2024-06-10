@@ -17,6 +17,16 @@ header img {
     border-radius: 50%;
 }
 
+header button {
+    margin: 20px;
+    width: 200px;
+    font-size: 15px;
+}
+
+header input {
+    width: 200px;
+}
+
 main {
     display: flex;
     flex-basis: 1000px;
