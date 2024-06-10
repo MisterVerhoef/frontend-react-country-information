@@ -1,17 +1,17 @@
 .africa-color {
-    color: blue;
+    color: #3436a5;
 }
 
 .south-america-color {
-    color: lightgreen;
+    color: #40a97d;
 }
 
 .asia-color {
-    color: red;
+    color:#6b0102;
 }
 
 .europe-color {
-    color: yellow;
+    color: #e4c341;
 }
 
 .north-america-color {
@@ -19,5 +19,5 @@
 }
 
 .australia-color {
-    color: purple;
+    color: #a654ba;
 }
