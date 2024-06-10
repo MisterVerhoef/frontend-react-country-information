@@ -81,7 +81,6 @@ function App() {
                         onChange={(event) => setSearchTerm(event.target.value)}
                     />
                     </div>
-                    {/*<button type="button" onClick={fetchSearchData}>Search</button>*/}
                     <div>
                         <button type="button" onClick={fetchData}>Show me all the countries</button>
                     </div>
@@ -90,19 +89,8 @@ function App() {
 
                 <SearchFunction countries={countries} error={error}/>
 
-                <ShowCountries countries={countries} error={error}/>
+                {/*<ShowCountries countries={countries} error={error}/> */}
 
-                {/*<ul>*/}
-                {/*    {countries.map((country) => (*/}
-                {/*        <li key={country.name}>*/}
-                {/*            <img src={country.href.flag} alt={country.name}/>*/}
-                {/*            <span className={ContinentColor(country.continent)}>{country.name}</span>*/}
-                {/*            <p>Has a population of {country.population} people</p>*/}
-                {/*        </li>*/}
-                {/*    ))}*/}
-                {/*</ul>*/}
-
-                {/*{error && <p>Something went wrong</p>}*/}
 
             </main>
         </>
