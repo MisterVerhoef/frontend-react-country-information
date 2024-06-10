@@ -2,8 +2,6 @@ import './App.css';
 import axios from "axios";
 import {useState} from "react";
 import worldmap from "./assets/world_map.png";
-import ContinentColor from "./componenten/regionColor/ContinentColor.jsx";
-import ShowCountries from "./componenten/showCountries/ShowCountries.jsx";
 import SearchFunction from "./componenten/searchCountry/SearchFunction.jsx";
 
 //api key  1069|fxruKNZL75NCNywx27zhItek4yJiwH9lpaKXjLTi
@@ -89,7 +87,7 @@ function App() {
 
                 <SearchFunction countries={countries} error={error}/>
 
-                {/*<ShowCountries countries={countries} error={error}/> */}
+
 
 
             </main>
