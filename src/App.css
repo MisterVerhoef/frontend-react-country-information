@@ -37,6 +37,13 @@ main ul {
     border: 4px red dotted;
 }
 
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: 4px green dotted;
+}
+
 ul img {
     width: 100px;
     height: 100px;
