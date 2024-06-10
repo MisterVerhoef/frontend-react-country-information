@@ -7,6 +7,7 @@ function SearchFunction({countries, error}) {
         <>
         <ul>
 
+            {/* eslint-disable-next-line react/prop-types */}
             {countries.map((country) => (
                 <li key={country.name}>
                     <img src={country.href.flag} alt={country.name}/>

@@ -27,15 +27,7 @@ main {
     border: 4px red dotted;
 }
 
-main ul {
-    display: flex;
-    flex-basis: 500px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    border: 4px red dotted;
-}
+
 
 li {
     list-style: none;
