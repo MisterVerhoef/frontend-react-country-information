@@ -1,6 +1,6 @@
 import './App.css';
 import axios from "axios";
-import  {useState} from "react";
+import {useState} from "react";
 import worldmap from "./assets/world_map.png";
 import ContinentColor from "./componenten/regionColor/ContinentColor.jsx";
 import ShowCountries from "./componenten/showCountries/ShowCountries.jsx";
@@ -70,7 +70,9 @@ function App() {
             <header>
                 <img src={worldmap} alt="worldmap"/>
                 <h1>World Regions</h1>
+
                 <div className="search-bar">
+                    <button type="button" onClick={fetchSearchData}>Search</button>
                     <input
                         id="search"
                         type="search"
@@ -78,10 +80,11 @@ function App() {
                         value={searchTerm}
                         onChange={(event) => setSearchTerm(event.target.value)}
                     />
-
-                    <button type="button" onClick={fetchSearchData}>Search</button>
-                    <button type="button" onClick={fetchData}>Show me all the countries</button>
-                </div>
+                    </div>
+                    {/*<button type="button" onClick={fetchSearchData}>Search</button>*/}
+                    <div>
+                        <button type="button" onClick={fetchData}>Show me all the countries</button>
+                    </div>
             </header>
             <main>
 
@@ -103,7 +106,7 @@ function App() {
 
             </main>
         </>
-    );
+);
 }
 
 export default App;
